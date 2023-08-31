@@ -1,0 +1,20 @@
+type Auth {
+  token: String!
+  user: User!
+}
+
+type SignInPayload {
+  user: User
+  accessToken: String
+}
+
+input SignInInput {
+  email: String!
+  password: String!
+}
+
+input ResetPasswordInput {
+  email: String!
+  oldPassword: String!
+  newPassword: String!
+}

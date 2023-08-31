@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

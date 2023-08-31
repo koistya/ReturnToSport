@@ -1,0 +1,7 @@
+type Cohort {
+  id: ID!
+  month: String!
+  year: Int!
+  users: [User!]!
+  posts: [Post!]!
+}

@@ -1,0 +1,21 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "knex": "knex",
+    "migrate:latest": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:make": "knex migrate:make",
+    "seed:run": "knex seed:run",
+    "seed:make": "knex seed:make"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.5.1",
+    "knex-types": "^0.5.0",
+    "pg": "^8.11.2"
+  }
+}

@@ -1,0 +1,11 @@
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  password: String! # This should be hashed and never returned in a query
+  avatarUrl: String
+}
+
+type Query {
+  me: User!
+}

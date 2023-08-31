@@ -1,0 +1,32 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+# Compiled output
+/*/dist/
+
+# Expo
+node_modules/
+**/app/.expo/
+**/app/dist/
+**/app/npm-debug.*
+**/app/*.jks
+**/app/*.p8
+**/app/*.p12
+**/app/*.key
+**/app/*.mobileprovision
+**/app/*.orig.*
+**/app/web-build/
+
+# macOS
+.DS_Store
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+
+# Environment variables
+.*.override.env
+
+# Environment variables
+/*/*.env
+.env
