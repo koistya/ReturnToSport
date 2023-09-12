@@ -9,6 +9,8 @@ import HomeStackNavigator from './src/navigators/HomeStackNavigator';
 import { AuthProvider, AuthContext } from './src/contexts/AuthContext';
 import { setContext } from '@apollo/client/link/context';
 
+console.log(`Client on Expo`);
+
 const httpLink = createHttpLink({
   uri: 'http://127.0.0.1:4000',
 });
@@ -17,9 +19,6 @@ const httpLink = createHttpLink({
 const authLink = setContext(async (_, { headers }) => {
   // Get the authentication token from local storage (or wherever you store it)
   const token = await AsyncStorage.getItem('token');
-
-  // Log the token
-  // console.log("Token for this request:", token);
 
   // Return the headers to the context so the link can read them
   return {

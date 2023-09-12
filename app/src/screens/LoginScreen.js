@@ -30,7 +30,6 @@ const LoginScreen = () => {
   const handleLogin = async () => {
      if (username && password) {
         const { data } = await signIn({ variables: { input: { username, password } } });
-        console.log(data);
 
         if (data && data.signIn && data.signIn.token) {
           await AsyncStorage.setItem('token', 'true');

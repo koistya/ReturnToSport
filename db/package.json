@@ -1,7 +1,6 @@
 {
   "name": "db",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "knex": "knex",
@@ -17,5 +16,14 @@
     "knex": "^2.5.1",
     "knex-types": "^0.5.0",
     "pg": "^8.11.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhallagan/ReturnToSport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dhallagan/ReturnToSport/issues"
+  },
+  "homepage": "https://github.com/Dhallagan/ReturnToSport#readme",
+  "description": ""
 }

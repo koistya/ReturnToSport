@@ -3,7 +3,7 @@ import db from "../../db/db.js";
 const Mutation = {
     async addCheckIn(_, { input }, ctx) {
       if (!ctx.user) throw new Error("Unauthenticated");
-      console.log(ctx.user.id)
+      
       try {
         const therapyCheckIn = await db('therapy_checkins')
         .insert({

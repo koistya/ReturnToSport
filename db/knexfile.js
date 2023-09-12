@@ -1,11 +1,13 @@
+require('dotenv').config({ path: '../env/.test.env' });
+
 module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'postgres',
-      database : 'returntosnow_local'
+      host : process.env.DB_HOST,
+      user : process.env.DB_USER,
+      password : process.env.DB_PASSWORD,
+      database : process.env.DB_NAME,
     },
     migrations: {
       directory: './migrations'
@@ -14,5 +16,4 @@ module.exports = {
       directory: './seeds'
     }
   }
-  // ... you can also add configurations for "production", "staging", etc.
 };

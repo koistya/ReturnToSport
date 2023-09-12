@@ -4,7 +4,7 @@ import db from "../../db/db.js";
 const Mutation = {
     async signIn(_, args, ctx, info) {
         const input = args.input;
-        console.log(input)
+        
         // Find user(s) by username or email
         const login = input.username?.includes("@") ? "email" : "username";
         const query = db("users");

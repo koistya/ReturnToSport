@@ -1,0 +1,30 @@
+{
+  "name": "returntosport",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm exec --workspaces npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhallagan/ReturnToSport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhallagan/ReturnToSport/issues"
+  },
+  "homepage": "https://github.com/Dhallagan/ReturnToSport#readme",
+  "workspaces": [
+    "api",
+    "app",
+    "db"
+  ],
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  }
+}
